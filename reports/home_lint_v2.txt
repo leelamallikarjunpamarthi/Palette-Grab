@@ -1,0 +1,19 @@
+﻿
+C:\Users\HP\Downloads\Palette Grab new\src\pages\Home.tsx
+  33:13  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+  39:28  error    Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\HP\Downloads\Palette Grab new\src\pages\Home.tsx:39:28
+  37 |                 id: newColorId,
+  38 |                 hex: capturedColorToSave,
+> 39 |                 timestamp: Date.now(),
+     |                            ^^^^^^^^^^ Cannot call impure function
+  40 |             });
+  41 |             trackColorAddedToPalette(paletteId, capturedColorToSave); // Track analytics
+  42 |             setShowSaveModal(false);  react-hooks/purity
+
+Γ£û 2 problems (1 error, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

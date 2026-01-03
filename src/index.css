@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111827;
+  --color-secondary: #f9fafb;
+  --color-accent: #3b82f6;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-muted: #6b7280;
+
+  --font-family-sans: Inter, sans-serif;
+}
+
+/* ============= GRADIENT BACKGROUNDS ============= */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-bg {
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* 10 Stunning Gradient Themes */
+
+.gradient-sunset {
+  background: linear-gradient(135deg,
+      #FFD93D 0%,
+      #FFB347 15%,
+      #FF8C42 25%,
+      #FF6B9D 40%,
+      #FF2D95 55%,
+      #C44569 70%,
+      #8B3A9C 85%,
+      #1A1464 100%);
+}
+
+.gradient-ocean {
+  background: linear-gradient(135deg,
+      #6c5ce7 0%,
+      #74b9ff 20%,
+      #0984e3 40%,
+      #00cec9 60%,
+      #81ecec 80%,
+      #55efc4 100%);
+}
+
+.gradient-fire {
+  background: linear-gradient(135deg,
+      #ff0844 0%,
+      #ffb199 20%,
+      #ff6a00 40%,
+      #ee0979 60%,
+      #ff6a00 80%,
+      #ff0844 100%);
+}
+
+.gradient-galaxy {
+  background: linear-gradient(135deg,
+      #2e1753 0%,
+      #1f1746 20%,
+      #614385 40%,
+      #516395 60%,
+      #614385 80%,
+      #2e1753 100%);
+}
+
+.gradient-tropical {
+  background: linear-gradient(135deg,
+      #11998e 0%,
+      #38ef7d 20%,
+      #f5af19 40%,
+      #f12711 60%,
+      #fc4a1a 80%,
+      #38ef7d 100%);
+}
+
+.gradient-aurora {
+  background: linear-gradient(135deg,
+      #00c6ff 0%,
+      #0072ff 20%,
+      #a044ff 40%,
+      #6a3093 60%,
+      #e73c7e 80%,
+      #23a6d5 100%);
+}
+
+.gradient-candy {
+  background: linear-gradient(135deg,
+      #ff9a9e 0%,
+      #fecfef 20%,
+      #ffecd2 40%,
+      #fcb69f 60%,
+      #ff9a9e 80%,
+      #fad0c4 100%);
+}
+
+.gradient-neon {
+  background: linear-gradient(135deg,
+      #ffb3ff 0%,
+      #b3ffff 20%,
+      #ffb3e6 40%,
+      #b3ffb3 60%,
+      #ffffb3 80%,
+      #ffb3ff 100%);
+}
+
+.gradient-royal {
+  background: linear-gradient(135deg,
+      #141e30 0%,
+      #243b55 20%,
+      #5f2c82 40%,
+      #49a09d 60%,
+      #c471f5 80%,
+      #fa71cd 100%);
+}
+
+.gradient-vibrant {
+  background: linear-gradient(135deg,
+      #f857a6 0%,
+      #ff5858 20%,
+      #ffa726 40%,
+      #26c6da 60%,
+      #7c4dff 80%,
+      #f857a6 100%);
+}
+
+/* Apply default gradient */
+body {
+  color: #111827;
+  background-color: #f9fafb;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Light overlay for better text readability on gradients */
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradient-overlay>* {
+  position: relative;
+  z-index: 1;
+}
