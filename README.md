@@ -2,7 +2,6 @@
 
 A Progressive Web App for capturing and managing colors from the real world using your device's camera.
 
-![Palette Grab](./public/pwa-192x192.png)
 
 ## Features
 
@@ -11,8 +10,6 @@ A Progressive Web App for capturing and managing colors from the real world usin
 📊 **Color Analysis** - View HEX, RGB, HSL, and CMYK values  
 🌈 **Color Harmonies** - Discover complementary, triadic, and analogous colors  
 📱 **PWA Support** - Install on mobile and desktop, works offline  
-💾 **Local Storage** - All data persists locally with Zustand  
-🎭 **Beautiful UI** - Dark theme with smooth animations
 
 ## Tech Stack
 
@@ -24,10 +21,6 @@ A Progressive Web App for capturing and managing colors from the real world usin
 - **PWA** - Service Worker + Web Manifest
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ and npm
 
 ### Installation
 
@@ -57,33 +50,7 @@ npm run preview
 
 The production build will be in the `dist/` folder.
 
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Camera/          # Camera feed and color sampling
-│   └── Layout/          # App layout and navigation
-├── pages/               # Route pages
-├── hooks/               # Custom React hooks
-├── store/               # Zustand state management
-├── types/               # TypeScript interfaces
-└── utils/               # Color conversion utilities
-```
-
 ## PWA Installation
-
-### Desktop (Chrome)
-1. Open the app in Chrome
-2. Click the install icon in the address bar
-3. Click "Install"
-
-### Mobile (Chrome/Safari)
-1. Open the app in your browser
-2. Tap the share button
-3. Select "Add to Home Screen"
-
-The app will work offline once installed!
 
 ## Camera Permissions
 
@@ -115,32 +82,3 @@ The app requires camera access to capture colors. On first use:
 - Copy values to clipboard
 - Explore color harmonies
 - See complementary, triadic, and analogous colors
-
-## Browser Support
-
-- ✅ Chrome 90+
-- ✅ Edge 90+
-- ✅ Safari 14+
-- ✅ Firefox 88+
-
-## License
-
-MIT License - feel free to use this project however you'd like!
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Future Enhancements
-
-- [ ] Supabase cloud sync
-- [ ] User authentication
-- [ ] Palette sharing
-- [ ] Export to various formats (JSON, CSS, ASE)
-- [ ] Color naming via API
-- [ ] Theme toggle (light/dark)
-- [ ] Color blindness simulation
-
----
-
-Made with ❤️ for designers and developers
